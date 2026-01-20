@@ -3,7 +3,7 @@
 @theme {
   --font-sans: var(--font-poppins);
   --font-serif: var(--font-playfair);
-  --font-script: var(--font-great-vibes);
+  --font-script: var(--font-dancing-script);
 
   --color-sky-blue: #8ECDF7;
   --color-pastel-blue: #CFEFFF;
@@ -12,20 +12,28 @@
   --color-silver-white: rgba(255, 255, 255, 0.9);
   --color-glass: rgba(180, 220, 255, 0.25);
   --color-glass-border: rgba(255, 255, 255, 0.35);
-  
+
   --animate-float: float 6s ease-in-out infinite;
   --animate-fade-in-up: fadeInUp 1s ease-out forwards;
-  
+
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
   }
-  
+
   @keyframes fadeInUp {
     from {
       opacity: 0;
       transform: translateY(20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -34,8 +42,8 @@
 }
 
 :root {
-  --background: #EAF7FF; 
-  --foreground: #334155; 
+  --background: #EAF7FF;
+  --foreground: #334155;
 }
 
 body {
@@ -57,6 +65,6 @@ body {
 .text-gradient {
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #1e40af, #8ECDF7); 
+  background-image: linear-gradient(to right, #1e40af, #8ECDF7);
   color: transparent;
 }
