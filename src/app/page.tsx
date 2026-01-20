@@ -18,6 +18,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const [isStarted, setIsStarted] = useState(false);
 
   useEffect(() => {
     // Simulate initial loading time
@@ -30,13 +31,13 @@ export default function Home() {
   return (
     <main className="min-h-screen relative overflow-x-hidden">
       <FallingElements />
-      <MusicPlayer />
+      <MusicPlayer onStart={() => setIsStarted(true)} />
 
       <AnimatePresence mode="wait">
         {loading && <LoadingScreen key="loader" onComplete={() => { }} />}
       </AnimatePresence>
 
-      {!loading && (
+      {!loading && isStarted && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
