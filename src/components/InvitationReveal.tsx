@@ -67,7 +67,7 @@ export default function InvitationReveal({ onOpen }: InvitationRevealProps) {
              
              <div className="text-center z-10 p-6 bg-white w-[90%] h-[90%] rounded shadow-inner flex flex-col items-center justify-center translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                 <p className="font-serif text-sky-500 text-sm">You are invited to the wedding of</p>
-                <h2 className="font-script text-3xl text-stone-700 my-2">Sabarinathan & Maithili</h2>
+                <h2 className="font-script text-3xl text-stone-700 my-2">Sabarinathan & Mythili</h2>
                 <div className="mt-4 px-6 py-2 bg-sky-500 text-white rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2">
                     <Mail size={12} />
                     Click to Open

@@ -17,7 +17,7 @@ export default function Footer() {
             <div className=" relative w-50 h-50">
                  <Image 
                     src="/images/sm-logo.png" 
-                    alt="Sabarinathan & Maithili" 
+                    alt="Sabarinathan & Mythili" 
                     fill 
                     className="object-contain mix-blend-multiply" 
                  />

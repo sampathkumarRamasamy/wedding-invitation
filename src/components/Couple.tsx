@@ -59,13 +59,13 @@ export default function Couple() {
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-white/50 overflow-hidden shadow-xl glass-card">
                <Image 
                 src="/images/bride.png" 
-                alt="Maithili" 
+                alt="Mythili" 
                 fill 
                 className="object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
             <div className="text-center mt-6">
-              <h3 className="font-serif text-2xl text-stone-700">Maithili</h3>
+              <h3 className="font-serif text-2xl text-stone-700">Mythili</h3>
               <p className="text-sky-500 uppercase tracking-widest text-sm mt-1">The Bride</p>
             </div>
           </motion.div>
